@@ -4,10 +4,10 @@
 */
 :root {
   --bg-color: #000028;
-  --bg-accent-color: #FF0070;
+  --accent-color: #FF0070;
+  --bg-image: url(../images/cover-image-dark.png);
   --main-title-color: #DB00FF;
-  --shadow-color: #FF0070;
   --text-color: #F1B2CE;
-  --text-accent-color: #000028;
-  --section-title-color: #FF0070;
+  --text-accent-block-color: #000028;
+  --font-family: "IBM Plex Mono", Arial, sans-serif;
 }
