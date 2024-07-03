@@ -1,6 +1,7 @@
 .page {
   color: var(--text-color);
   font-family: var(--font-family);
+  font-size: 18px;
   background-color: var(--bg-color);
   background-image: var(--bg-image);
   background-repeat: no-repeat;
@@ -62,7 +63,60 @@
 }
 
 .header__theme-menu {
+  justify-self: end;
+  align-self: center;
+}
+
+.header__theme-menu-list {
   display: flex;
-  justify-content: end;
-  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  border: none;
+  padding: 0 13px;
+  padding-block-end: 3px;
+  color: var(--accent-color);
+  line-height: 1;
+  text-transform: lowercase;
+  background-color: transparent;
+  block-size: 26px;
+  cursor: pointer;
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-block-end : 1px solid var(--accent-color);
+}
+
+.header__theme-menu-button:hover {
+  outline: 1px solid var(--hover-color);
+  outline-offset: -1px;
+}
+
+.header__theme-menu-button_active {
+  outline: 1px solid var(--accent-color);
+  outline-offset: -1px;
+}
+
+.header__title {
+  color: var(--main-title-color);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 0.825;
+  text-shadow: 4px 4px 0 var(--accent-color);
+}
+
+.header__description {
+  align-self: center;
+}
+
+.title-decor {
+  color: var(--text-accent-block-color);
+  font-weight: 700;
+  line-height: 1.3;
+  background: var(--accent-color);
 }
