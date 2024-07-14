@@ -43,6 +43,7 @@
 
 .header__decorated-element {
   position: absolute;
+  visibility: var(--decorated-element-visibility);
   display: flex;
   align-items: center;
   gap: 10px;
@@ -109,7 +110,7 @@
   color: var(--main-title-color);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 0.825;
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 4px 4px 0 var(--main-title-shadow-color);
 }
 
 .header__description {
@@ -118,10 +119,10 @@
 }
 
 .title-decor {
-  color: var(--text-accent-block-color);
+  color: var(--title-decor-color);
   font-size: 18px;
   line-height: 1.3;
-  background: var(--accent-color);
+  background-color: var(--title-decor-background-color);
 }
 
 .main {
@@ -155,9 +156,8 @@
 }
 
 .link {
-  border-block-end: 1px solid var(--text-color);
   text-decoration: none;
-  text-shadow: 2px 2px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--text-shadow-color);
 }
 
 .link:focus {
@@ -203,5 +203,5 @@
   color: var(--main-title-color);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 0.825;
-  text-shadow: 2px 2px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--main-title-shadow-color);
 }
