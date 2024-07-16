@@ -8,7 +8,6 @@
   --text-shadow-color: #FF0070;
   --title-decor-color: #000028;
   --title-decor-background-color: #FF0070;
-  --font-family: "IBM Plex Mono", monospace;
-  --hover-color: #FF99C6;
+  --hover-color: rgba(255, 0, 112, 0.4);
   --decorated-element-visibility: visible;
 }
